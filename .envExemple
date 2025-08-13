@@ -1,0 +1,8 @@
+Crie um arquivo .env no raiz do projeto e adicione as seguintes variáveis:
+
+DATABASE_URL="postgresql://seu_usuario:seu_password@localhost:5433/nome_do_banco?schema=public"
+
+POSTGRES_USER=seu_usuario
+POSTGRES_PASSWORD=seu_password
+POSTGRES_DB=nome_do_banco  
+

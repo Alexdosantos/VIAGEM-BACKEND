@@ -38,6 +38,24 @@ Possui scripts para desenvolvimento, build e testes.
 
 ---
 
+### API Interna - `/api/country`
+
+Além disso, a aplicação integra com uma API própria para gerenciamento de dados de países, com os seguintes endpoints REST:
+
+| Método  | Endpoint                   | Descrição                        |
+|---------|----------------------------|---------------------------------|
+| `POST`  | `/api/country/create`       | Cria um novo país               |
+| `GET`   | `/api/country/all`          | Retorna todos os países         |
+| `GET`   | `/api/country/all/cca2/:cca2` | Busca países pelo código CCA2   |
+| `GET`   | `/api/country/find/:id`     | Busca país pelo ID              |
+| `PUT`   | `/api/country/update/:id`   | Atualiza país pelo ID           |
+| `DELETE`| `/api/country/delete/:id`   | Remove país pelo ID             |
+| `DELETE`| `/api/country/delete/cca2/:cca2` | Remove país pelo código CCA2    |
+
+Esses endpoints são utilizados para funcionalidades administrativas da aplicação, como criação, edição e exclusão de dados de países.
+
+---
+
 ## 🔑 Configuração do Ambiente
 
 Crie um arquivo `.env` na raiz do projeto e configure as variáveis conforme seu banco e ambiente:
